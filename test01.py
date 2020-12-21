@@ -68,5 +68,6 @@ option = ql.BarrierOption(ql.Barrier.UpIn, 120, 0, ql.PlainVanillaPayoff(ql.Opti
                           ql.EuropeanExercise(ql.Date(23, ql.December, 2020)))
 option.setPricingEngine(ql.AnalyticBarrierEngine(process))
 print(option.NPV())
+
 # delta not defined, use a bump-and-reval for numerical calculation
 # print(option.delta())
